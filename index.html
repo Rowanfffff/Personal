@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>rowanyu.com</title>
@@ -18,110 +17,127 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
       display: flex;
       justify-content: center;
-      align-items: center;
       padding: 20px;
     }
 
     .container {
       width: 100%;
-      max-width: 700px;
+      max-width: 800px;
+      padding: 40px 0;
     }
 
     .card {
       background: white;
-      padding: 50px 40px;
+      padding: 40px;
       border-radius: 24px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     }
 
     h1 {
-      margin: 0 0 30px;
+      text-align: center;
+      margin-bottom: 30px;
       color: #111827;
-      font-size: 40px;
-      font-weight: 700;
-    }
-
-    h2 {
-      margin: 35px 0 16px;
-      color: #374151;
-      font-size: 20px;
-      font-weight: 600;
     }
 
     .btn {
       display: block;
       width: 100%;
       max-width: 320px;
-      margin: 12px auto;
-      padding: 15px 20px;
+      margin: 0 auto 30px;
+      padding: 15px;
+      background: #2563eb;
+      color: white;
       text-decoration: none;
       border-radius: 14px;
+      text-align: center;
       font-weight: 600;
-      font-size: 17px;
-      transition: all 0.2s ease;
     }
 
     .btn:hover {
-      transform: translateY(-2px);
-    }
-
-    .primary {
-      background: #2563eb;
-      color: white;
-    }
-
-    .primary:hover {
       background: #1d4ed8;
     }
 
-    .secondary {
-      background: #f3f4f6;
+    details {
+      margin: 14px 0;
+      background: #f9fafb;
+      border-radius: 14px;
+      padding: 14px 18px;
+      border: 1px solid #e5e7eb;
+    }
+
+    summary {
+      font-size: 18px;
+      font-weight: 600;
+      cursor: pointer;
       color: #111827;
     }
 
-    .secondary:hover {
-      background: #e5e7eb;
+    .sub {
+      margin-top: 12px;
+      margin-left: 12px;
+    }
+
+    .links a {
+      display: block;
+      padding: 8px 0;
+      color: #2563eb;
+      text-decoration: none;
+      word-break: break-word;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
     }
 
     @media (max-width: 600px) {
       .card {
-        padding: 35px 20px;
-        border-radius: 18px;
+        padding: 24px;
       }
 
-      h1 {
-        font-size: 30px;
-      }
-
-      h2 {
-        font-size: 18px;
-      }
-
-      .btn {
+      summary {
         font-size: 16px;
-        padding: 14px 16px;
       }
     }
   </style>
 </head>
-
 <body>
   <div class="container">
     <div class="card">
       <h1>Welcome</h1>
 
-      <a class="btn primary"
+      <a class="btn"
          href="https://rowanfffff.github.io/discipline-checkin/"
          target="_blank">
         Discipline Check-in
       </a>
 
-      <h2>Resources</h2>
+      <details>
+        <summary>Math</summary>
 
-      <a class="btn secondary" href="#">Math</a>
-      <a class="btn secondary" href="#">CS</a>
-      <a class="btn secondary" href="#">Other</a>
+        <div class="sub">
+          <details>
+            <summary>Linear Algebra</summary>
+
+            <div class="links">
+              <a href="#">Linear Algebra Done Right 4th Edition 2026</a>
+              <a href="#">Linear Algebra Third Edition</a>
+              <a href="#">Linear Algebra Done Wrong</a>
+              <a href="#">Linear Algebra Third Edition 1987</a>
+              <a href="#">Linear Algebra Third Edition 1995</a>
+              <a href="#">A Course In Algebra</a>
+            </div>
+          </details>
+        </div>
+      </details>
+
+      <details>
+        <summary>CS</summary>
+      </details>
+
+      <details>
+        <summary>Other</summary>
+      </details>
+
     </div>
   </div>
 </body>
