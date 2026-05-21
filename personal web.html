@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rowan Yu</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      background: #f6f7fb;
+      color: #111827;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 20px;
+    }
+
+    header {
+      background: white;
+      border-radius: 24px;
+      padding: 42px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+      margin-bottom: 24px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #eef2ff;
+      color: #4338ca;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: 44px;
+      line-height: 1.1;
+      margin-bottom: 14px;
+    }
+
+    .intro {
+      font-size: 18px;
+      color: #4b5563;
+      max-width: 650px;
+    }
+
+    .buttons {
+      margin-top: 28px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    a.button {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    a.button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .primary {
+      background: #2563eb;
+      color: white;
+    }
+
+    .secondary {
+      background: #e5e7eb;
+      color: #111827;
+    }
+
+    section {
+      background: white;
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.04);
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      padding: 18px;
+      background: #fafafa;
+    }
+
+    .card h3 {
+      margin-bottom: 8px;
+      font-size: 18px;
+    }
+
+    .card p {
+      color: #4b5563;
+      font-size: 15px;
+      margin-bottom: 12px;
+    }
+
+    .card a {
+      color: #2563eb;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .small {
+      color: #6b7280;
+      font-size: 15px;
+    }
+
+    footer {
+      text-align: center;
+      color: #6b7280;
+      font-size: 14px;
+      padding: 16px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 30px 24px;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <div class="tag">Personal Website</div>
+      <h1>Hi, I'm Rowan Yu.</h1>
+      <p class="intro">
+        I am a student interested in computer science, mathematics, and building useful tools.
+        This site is a small place for my projects, learning notes, and personal work.
+      </p>
+
+      <div class="buttons">
+        <a class="button primary" href="https://rowanfffff.github.io/discipline-checkin/" target="_blank">
+          Open Discipline Check-in
+        </a>
+        <a class="button secondary" href="mailto:rowanyu2005@gmail.com">
+          Contact Me
+        </a>
+      </div>
+    </header>
+
+    <section>
+      <h2>About</h2>
+      <p class="small">
+        I am currently learning programming, math, and English communication. I like simple tools
+        that help me stay focused and improve a little every day.
+      </p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Daily Discipline Check-in</h3>
+          <p>A small check-in tool for tracking daily study habits and reducing distractions.</p>
+          <a href="https://rowanfffff.github.io/discipline-checkin/" target="_blank">View project →</a>
+        </div>
+
+        <div class="card">
+          <h3>More Projects Coming Soon</h3>
+          <p>I will add more coding projects, course work, and learning notes here later.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Links</h2>
+      <p class="small">
+        GitHub: <a href="https://github.com/Rowanfffff" target="_blank">github.com/Rowanfffff</a>
+      </p>
+    </section>
+
+    <footer>
+      © 2026 Rowan Yu · rowanyu.com
+    </footer>
+  </main>
+</body>
+</html>
